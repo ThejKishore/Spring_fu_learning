@@ -9,6 +9,10 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+tasks.withType<Test> {
+    useJUnitPlatform ()
+}
+
 dependencies {
     implementation("org.springframework.fu:spring-fu-jafu:0.0.5")
 
